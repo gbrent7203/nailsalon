@@ -2,16 +2,17 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background: #F9E0E0;
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Times New Roman', Times, serif, sans-serif;
 }
 
 .container {
     display: flex;
     justify-content: center;
-    align-items: flex-start; /* Aligns the items to the top */
+    align-items: center; /* Centers everything vertically in the container */
     height: 100vh;
     position: relative; /* Make the container a positioning context */
 }
@@ -20,37 +21,48 @@ body {
     position: absolute;
     top: 20px;
     right: 20px; /* Positioning navigation at the top left */
-    background-color: #f8f8f8;
     padding: 20px;
-    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
 }
 
 .nav ul {
     list-style-type: none;
-    padding: 0;
+    display: flex; /* Ensures horizontal alignment */
+    padding: 0; /* Removes default padding */
+    margin: 0; /* Removes default margin */
 }
 
 .nav li {
-    margin-bottom: 10px;
+    margin: 0 20px; /* Adjusts the space between the list items */
 }
 
 .nav a {
     text-decoration: none;
-    color: #333;
+    color: #EA9C98;
     font-size: 18px;
+    padding: 10px 5px; /* Space inside the links */
 }
 
 .gallery {
-    flex: 3;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: center; /* Horizontally center the carousel */
+    align-items: center; /* Vertically center the carousel */
     background-color: #fafafa;
+    width: 100%; /* Ensures gallery takes full width */
+    height: 100%; /* Ensures gallery takes full height */
+}
+
+.carousel {
+    display: flex;
+    justify-content: center; /* Horizontally centers the images inside the carousel */
+    align-items: center; /* Vertically centers the images inside the carousel */
+    width: 100%;
+    height: 100%; /* Ensures carousel takes full height */
 }
 
 .carousel img {
-    width: 100%;
-    max-width: 600px;
+    width: 400%;
+    max-width: 500px; /* Control the maximum width of the images */
+    height: auto; /* Keep aspect ratio */
     border-radius: 10px;
 }
 
