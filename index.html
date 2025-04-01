@@ -3,10 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Nail Salon</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Welcome to our Nail Parlor</h1>
-    <p>This is a simple HTML document.</p>  
+    <div class="container">
+        <!-- Navigation Section (Right) -->
+        <nav class="nav">
+            <ul>
+                <p><a href="#">Home</a></p>
+                <p><a href="#">Services</a></p>
+                <p><a href="#">Gallery</a></p>
+                <p><a href="#">Contact</a></p>
+            </ul>
+        </nav>
+
+        <!-- Photo Carousel Gallery (Center) -->
+        <div class="gallery">
+            <div class="carousel">
+                <!-- Add your image slides here -->
+                <img src="/images/1.jpg" alt="Nail Design 1">
+                <img src="image2.jpg" alt="Nail Design 2">
+                <img src="image3.jpg" alt="Nail Design 3">
+            </div>
+        </div>
+
+        <!-- Logo Section (Left) -->
+        <div class="logo">
+            <img src="logo.png" alt="Nail Salon Logo">
+        </div>
+    </div>
+
+    <!-- Optional JavaScript to make the carousel work -->
+    <script src="carousel.js"></script>
 </body>
 </html>
